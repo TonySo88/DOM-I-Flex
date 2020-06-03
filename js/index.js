@@ -51,6 +51,13 @@ navItems[3].textContent = siteContent["nav"]["nav-item-4"];
 navItems[4].textContent = siteContent["nav"]["nav-item-5"];
 navItems[5].textContent = siteContent["nav"]["nav-item-5"];
 
+navItems[0].style.color = "green";
+navItems[1].style.color = "green";
+navItems[2].style.color = "green";
+navItems[3].style.color = "green";
+navItems[4].style.color = "green";
+navItems[5].style.color = "green";
+
 let ctaH1 = document.querySelector("h1");
 ctaH1.textContent = siteContent["cta"]["h1"];
 
@@ -92,3 +99,17 @@ contactP[2].innerText = siteContent["contact"]["email"];
 
 let footer = document.querySelector("footer");
 footer.textContent = siteContent["footer"]["copyright"];
+
+const headerElement = document.querySelector("nav");
+const subHeadline = document.createElement("h1");
+subHeadline.textContent = "Cool Stuff"
+subHeadline.style.fontSize = "18px"
+subHeadline.style.color = "green"
+headerElement.appendChild(subHeadline)
+
+const headerElement2 = document.querySelector("nav");
+const subHeadline2 = document.createElement("h1")
+subHeadline2.textContent = "Kinda Cool Stuff"
+subHeadline2.style.fontSize = "18px"
+subHeadline2.style.color = "green"
+headerElement.prepend(subHeadline2); 
